@@ -1,6 +1,6 @@
 return {
-	font_size = 14.0,
+	font_size = 16.0,
 	window_frame = {
-		font_size = 14.0,
+		font_size = 16.0,
 	},
 }
