@@ -26,3 +26,4 @@ alias gps='git push'
 alias gst='git status -s'
 
 alias r='source ~/.zshrc'
+alias d='cd ~/dotfiles'
