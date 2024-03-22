@@ -42,9 +42,17 @@ fi
 #
 # zsh-autosuggestions
 #
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [ `uname -m` = "x86_64" ]; then
+  source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+else
+  source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
 #
 # zsh-syntax-highlighting
 #
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ `uname -m` = "x86_64" ]; then
+  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else
+  source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
