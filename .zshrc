@@ -1,5 +1,6 @@
 eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
+eval "$(fzf --zsh)"
 
 #
 # alias
