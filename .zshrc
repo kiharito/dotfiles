@@ -28,3 +28,23 @@ alias gst='git status -s'
 
 alias r='source ~/.zshrc'
 alias d='cd ~/dotfiles'
+
+#
+# zsh-completions
+#
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+#
+# zsh-autosuggestions
+#
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#
+# zsh-syntax-highlighting
+#
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
