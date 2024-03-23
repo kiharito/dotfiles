@@ -27,6 +27,8 @@ alias gpl='git pull -p'
 alias gps='git push'
 alias gst='git status -s'
 
+alias v='nvim'
+
 alias r='source ~/.zshrc'
 alias d='cd ~/dotfiles'
 
