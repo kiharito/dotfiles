@@ -59,3 +59,13 @@ if [ `uname -m` = "x86_64" ]; then
 else
   source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
+
+#
+# fzf custom
+#
+# git checkout using fzf
+fgco() {
+  local branches
+  branches=$(git branch --all | rg -v HEAD | cut -c 3- | sed "s#remotes/[^/]*/##" | awk '!a[$0]++{print}') &&
+  echo $branches | fzf | xargs git checkout
+}
