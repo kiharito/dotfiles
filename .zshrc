@@ -10,6 +10,10 @@ alias ll='eza -l --icons'
 alias la='eza -la --icons'
 alias tree='eza --tree --icons'
 
+alias cat='bat --style=plain --paging=never'
+alias find='fd'
+alias grep='rg'
+
 alias dc='docker compose'
 
 alias gac='git commit --amend'
