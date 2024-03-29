@@ -17,11 +17,9 @@ alias grep='rg'
 alias dc='docker compose'
 
 alias gac='git commit --amend'
-alias gacm='git commit --amend -m'
 alias gad='git add'
 alias gbr='git branch'
 alias gbrD='git branch | cut -c 3- | gum choose --no-limit | xargs git branch -D'
-alias gcm='git commit -m'
 alias gco='git checkout'
 alias gdf='git diff'
 alias gfcm='git commit --allow-empty -m "first commit `date "+%Y-%m-%dT%H:%M:%S"`"'
@@ -65,12 +63,23 @@ else
   source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
-#
-# fzf custom
-#
 # git checkout using fzf
 fgco() {
   local branches
   branches=$(git branch --all | rg -v HEAD | cut -c 3- | sed "s#remotes/[^/]*/##" | awk '!a[$0]++{print}') &&
   echo $branches | fzf | xargs git checkout
+}
+
+# git commit using gum
+gcm() {
+  local summary
+  summary=$(gum input --placeholder "Summary of this change") &&
+  git commit -m "$summary"
+}
+
+# git commit --amend using gum
+gacm() {
+  local summary
+  summary=$(gum input --placeholder "Summary of this change") &&
+  git commit --amend -m "$summary"
 }
