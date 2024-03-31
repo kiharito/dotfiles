@@ -70,6 +70,13 @@ fgco() {
   echo $branches | fzf | xargs git checkout
 }
 
+# cd git repository using fzf
+frepo() {
+  local dir
+  dir=$(ghq list | fzf) &&
+  cd $(ghq root)/"$dir"
+}
+
 # git commit using gum
 gcm() {
   local summary
