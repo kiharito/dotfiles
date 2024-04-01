@@ -35,9 +35,6 @@ alias v='nvim'
 alias r='source ~/.zshrc'
 alias d='cd ~/dotfiles'
 
-# z
-. `brew --prefix`/etc/profile.d/z.sh
-
 # zsh-completions
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
