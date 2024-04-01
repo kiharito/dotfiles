@@ -79,3 +79,8 @@ gacm() {
   summary=$(gum input --placeholder "Summary of this change") &&
   git commit --amend -m "$summary"
 }
+
+# load local custom
+if [ -f ~/.zshrc.local ]; then
+  source ~/.zshrc.local
+fi
