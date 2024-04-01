@@ -3,6 +3,7 @@ source ~/.zshrc;
 
 brew bundle --no-lock --verbose --file=./Brewfile;
 
+ln -fns ~/dotfiles/.gitconfig ~/.gitconfig;
 ln -fns ~/dotfiles/.zshrc ~/.zshrc;
 ln -fns ~/dotfiles/config/starship.toml ~/.config/starship.toml;
 ln -fns ~/dotfiles/config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json;

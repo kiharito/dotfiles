@@ -1,0 +1,8 @@
+[include]
+  path = ~/.gitconfig_user
+
+[core]
+  editor = nvim
+
+[pull]
+  ff = only
