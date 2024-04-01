@@ -16,6 +16,9 @@ alias grep='rg'
 
 alias dc='docker compose'
 
+alias lzd='lazydocker'
+alias lg='lazygit'
+
 alias gac='git commit --amend'
 alias gad='git add'
 alias gbr='git branch'
