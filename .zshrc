@@ -35,14 +35,10 @@ alias v='nvim'
 alias r='source ~/.zshrc'
 alias d='cd ~/dotfiles'
 
-#
 # z
-#
 . `brew --prefix`/etc/profile.d/z.sh
 
-#
 # zsh-completions
-#
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
@@ -50,23 +46,11 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-#
 # zsh-autosuggestions
-#
-if [ `uname -m` = "x86_64" ]; then
-  source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-else
-  source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
+source `brew --prefix`/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-#
 # zsh-syntax-highlighting
-#
-if [ `uname -m` = "x86_64" ]; then
-  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-else
-  source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
+source `brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # git checkout using fzf
 fgco() {
