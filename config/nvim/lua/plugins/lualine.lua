@@ -1,8 +1,8 @@
 return {
-  'nvim-lualine/lualine.nvim',
+  "nvim-lualine/lualine.nvim",
   dependencies = {
-    'nvim-tree/nvim-web-devicons',
-    'lewis6991/gitsigns.nvim',
+    "nvim-tree/nvim-web-devicons",
+    "lewis6991/gitsigns.nvim",
   },
   config = function()
     -- gitのdiffやブランチについてはgitsigns経由で情報を取得する(lualineでは情報を取得しない)
@@ -12,23 +12,23 @@ return {
         return {
           added = gitsigns.added,
           modified = gitsigns.changed,
-          removed = gitsigns.removed
+          removed = gitsigns.removed,
         }
       end
     end
 
-    require('lualine').setup {
+    require("lualine").setup({
       options = {
-	globalstatus = true,
+        globalstatus = true,
       },
       sections = {
-	lualine_b = {
-          { 'b:gitsigns_head' },
-          { 'diff', source = diff_source },
-          { 'diagnostics' },
-        }
-      }
-    }
-    vim.api.nvim_set_option('showmode', false)
-  end
+        lualine_b = {
+          { "b:gitsigns_head" },
+          { "diff", source = diff_source },
+          { "diagnostics" },
+        },
+      },
+    })
+    vim.api.nvim_set_option("showmode", false)
+  end,
 }
