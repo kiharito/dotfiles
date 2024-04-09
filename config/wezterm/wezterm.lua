@@ -11,4 +11,6 @@ config.font = wezterm.font_with_fallback({
   { family = "HackGen35 Console NF", weight = "Regular", stretch = "Normal", style = "Normal" },
 })
 
+config.native_macos_fullscreen_mode = true
+
 return config
