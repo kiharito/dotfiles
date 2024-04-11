@@ -1,6 +1,8 @@
 #!/bin/zsh
 source ~/.zshrc;
 
+mise install;
+
 brew bundle --no-lock --verbose --file=./Brewfile;
 
 ln -fns ~/dotfiles/.gitconfig ~/.gitconfig;
