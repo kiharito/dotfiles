@@ -20,9 +20,11 @@ alias lzd='lazydocker'
 alias lg='lazygit'
 
 alias gac='git commit --amend'
+alias gacm='git commit --amend -m'
 alias gad='git add'
 alias gbr='git branch'
 alias gbrD='git branch | cut -c 3- | gum choose --no-limit | xargs git branch -D'
+alias gcm='git commit -m'
 alias gco='git checkout'
 alias gdf='git diff'
 alias gfcm='git commit --allow-empty -m "first commit `date "+%Y-%m-%dT%H:%M:%S"`"'
@@ -64,20 +66,6 @@ frepo() {
   local dir
   dir=$(ghq list | fzf) &&
   cd $(ghq root)/"$dir"
-}
-
-# git commit using gum
-gcm() {
-  local summary
-  summary=$(gum input --placeholder "Summary of this change") &&
-  git commit -m "$summary"
-}
-
-# git commit --amend using gum
-gacm() {
-  local summary
-  summary=$(gum input --placeholder "Summary of this change") &&
-  git commit --amend -m "$summary"
 }
 
 # load local custom
