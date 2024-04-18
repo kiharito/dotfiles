@@ -35,6 +35,7 @@ alias gpl='git pull -p'
 alias gps='git push'
 alias gst='git status -s'
 
+alias mine='rubymine'
 alias v='nvim'
 
 alias r='source ~/.zshrc'
