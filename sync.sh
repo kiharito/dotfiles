@@ -1,10 +1,9 @@
 #!/bin/zsh
-source ~/.zshrc;
+brew bundle --no-lock --verbose --file=./Brewfile;
 
 mise install;
 
-brew bundle --no-lock --verbose --file=./Brewfile;
-
+ln -fns ~/dotfiles/.aliases ~/.aliases;
 ln -fns ~/dotfiles/.gitconfig ~/.gitconfig;
 ln -fns ~/dotfiles/.ideavimrc ~/.ideavimrc;
 ln -fns ~/dotfiles/.zshrc ~/.zshrc;
@@ -14,5 +13,7 @@ ln -fns ~/dotfiles/config/karabiner/karabiner.json ~/.config/karabiner/karabiner
 ln -fns ~/dotfiles/config/mise ~/.config/mise;
 ln -fns ~/dotfiles/config/nvim ~/.config/nvim;
 ln -fns ~/dotfiles/config/wezterm ~/.config/wezterm;
+
+source ~/.zshrc;
 
 ./setup-mac.sh;
