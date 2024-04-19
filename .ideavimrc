@@ -27,6 +27,8 @@ set multiple-cursors
 " set textobj-entire
 " set ReplaceWithRegisterj
 
+let mapleader = ' '
+
 nmap <C-n> <Plug>NextWholeOccurrence
 xmap <C-n> <Plug>NextWholeOccurrence
 

@@ -13,6 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("options")
 
+vim.api.nvim_set_var("mapleader", " ")
+
 require("lazy").setup("plugins", {
   performance = {
     rtp = {
