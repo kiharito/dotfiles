@@ -3,7 +3,7 @@
 " You can find a list of commands here: https://jb.gg/h38q75
 " Find more examples here: https://jb.gg/share-ideavimrc
 
-"" -- Options --
+"" Options
 set scrolloff=5
 set incsearch
 set hlsearch
@@ -17,10 +17,21 @@ set softtabstop=2
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
-" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
-Plug 'machakann/vim-highlightedyank'
-Plug 'tpope/vim-commentary'
-Plug 'easymotion/vim-easymotion'
+" Plugins
+set commentary
+set highlightedyank
+set easymotion
+set multiple-cursors
+" set surround
+" set argtextobj
+" set textobj-entire
+" set ReplaceWithRegisterj
+
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+
+nmap <C-Down> <Action>(EditorCloneCaretBelow)
+nmap <C-Up> <Action>(EditorCloneCaretAbove)
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
