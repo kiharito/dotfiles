@@ -6,5 +6,6 @@ return {
   },
   config = function()
     require("nvim-tree").setup()
+    vim.keymap.set('n', '<leader>ex', vim.cmd.NvimTreeFocus)
   end,
 }
