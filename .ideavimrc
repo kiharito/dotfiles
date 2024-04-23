@@ -32,8 +32,10 @@ let mapleader = ' '
 
 nmap <C-n> <Plug>NextWholeOccurrence
 xmap <C-n> <Plug>NextWholeOccurrence
-nnoremap <leader>ex :NERDTreeFocus<CR>
+nmap <leader>ex :NERDTreeFocus<CR>
 
+map <leader>ff <Action>(SearchEverywhere)
+map <leader>fg <Action>(FindInPath)
 nmap <C-Down> <Action>(EditorCloneCaretBelow)
 nmap <C-Up> <Action>(EditorCloneCaretAbove)
 
