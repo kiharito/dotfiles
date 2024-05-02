@@ -4,6 +4,8 @@
 " Find more examples here: https://jb.gg/share-ideavimrc
 
 "" Options
+set notimeout
+set timeoutlen=5000
 set scrolloff=5
 set incsearch
 set hlsearch
@@ -23,6 +25,7 @@ set highlightedyank
 set easymotion
 set multiple-cursors
 set NERDTree
+set which-key
 " set surround
 " set argtextobj
 " set textobj-entire
