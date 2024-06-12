@@ -19,6 +19,10 @@ source `brew --prefix`/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # zsh-syntax-highlighting
 source `brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# terraform
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
 # git checkout using fzf
 fgco() {
   local branches
