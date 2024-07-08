@@ -4,8 +4,6 @@ alias la='eza -la --icons'
 alias tree='eza --tree --icons'
 
 alias cat='bat --style=plain --paging=never'
-alias find='fd'
-alias grep='rg'
 
 alias be='bundle exec'
 alias dc='docker compose'
