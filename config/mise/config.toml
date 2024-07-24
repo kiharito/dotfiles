@@ -4,7 +4,7 @@ python = "3.12.4"
 ruby = "3.2.4"
 java = "21.0.2"
 terraform = "1.8.4"
-go = "1.21.11"
+go = "1.22.5"
 
 [settings]
 experimental = true
