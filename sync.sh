@@ -3,6 +3,7 @@ brew bundle --no-lock --verbose --file=./Brewfile;
 
 mise install;
 
+ln -fns ~/dotfiles/.actrc ~/.actrc;
 ln -fns ~/dotfiles/.aliases ~/.aliases;
 ln -fns ~/dotfiles/.gitconfig ~/.gitconfig;
 ln -fns ~/dotfiles/.ideavimrc ~/.ideavimrc;
