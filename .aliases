@@ -30,6 +30,7 @@ alias gst='git status -s'
 
 alias mine='rubymine'
 alias v='nvim'
+alias v-clear='rm -rf ~/.local/share/nvim && rm -rf ~/.local/state/nvim && rm -rf ~/.cache/nvim'
 
 alias r='source ~/.zshrc'
 alias d='cd ~/dotfiles'
