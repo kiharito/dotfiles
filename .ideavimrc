@@ -31,14 +31,28 @@ set which-key
 " set textobj-entire
 " set ReplaceWithRegisterj
 
+" LazyVimと使い勝手を揃えたい
 let mapleader = ' '
-
-nmap <leader>e :NERDTreeFocus<CR>
-map <leader>ff <Action>(SearchEverywhere)
-map <leader><space> <Action>(SearchEverywhere)
-map <leader>fg <Action>(FindInPath)
-map <leader>/ <Action>(FindInPath)
+" General
 nmap <leader>cf <Action>(ReformatCode)
+nmap <S-h> <Action>(PreviousTab)
+nmap <S-l> <Action>(NextTab)
+nmap [b <Action>(PreviousTab)
+nmap ]b <Action>(NextTab)
+nmap <leader>bd <Action>(CloseContent)
+" LSP
+nmap <leader>cr <Action>(RenameElement)
+" bufferline.nvim
+nmap <leader>bo <Action>(CloseAllEditorsButActive)
+nmap <leader>bp <Action>(PinActiveEditorTab)
+nmap <leader>bP <Action>(CloseAllUnpinnedEditors)
+" neo-tree.nvim
+nmap <leader>e :NERDTreeToggle<CR>
+" telescope.nvim
+map <leader><space> <Action>(SearchEverywhere)
+map <leader>ff <Action>(SearchEverywhere)
+map <leader>/ <Action>(FindInPath)
+" other
 nmap <leader>r <Action>(Run)
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
