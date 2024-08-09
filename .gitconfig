@@ -22,5 +22,9 @@
 
 [diff]
   colorMoved = default
+
 [push]
   autoSetupRemote = true
+
+[fetch]
+  prune = true
