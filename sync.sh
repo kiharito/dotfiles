@@ -11,6 +11,7 @@ ln -fns ~/dotfiles/.zshenv ~/.zshenv;
 ln -fns ~/dotfiles/.zshrc ~/.zshrc;
 ln -fns ~/dotfiles/config/starship.toml ~/.config/starship.toml;
 ln -fns ~/dotfiles/config/gh/config.yml ~/.config/gh/config.yml;
+ln -fns ~/dotfiles/config/git/ignore ~/.config/git/ignore;
 ln -fns ~/dotfiles/config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json;
 ln -fns ~/dotfiles/config/lazygit/config.yml ~/.config/lazygit/config.yml;
 ln -fns ~/dotfiles/config/mise ~/.config/;
