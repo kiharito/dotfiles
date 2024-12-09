@@ -7,3 +7,5 @@ export PATH="$HOME/.local/share/mise/shims:$PATH"
 export PATH="$HOME/.cargo/env:$PATH"
 # Created by `pipx`
 export PATH="$HOME/.local/bin:$PATH"
+
+export PATH="$HOME/Library/Application Support/JetBrains/Toolbox/scripts:$PATH"
