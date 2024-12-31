@@ -15,6 +15,7 @@ ln -fns ~/dotfiles/config/gh/config.yml ~/.config/gh/config.yml;
 ln -fns ~/dotfiles/config/git/ignore ~/.config/git/ignore;
 ln -fns ~/dotfiles/config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json;
 ln -fns ~/dotfiles/config/lazygit/config.yml ~/.config/lazygit/config.yml;
+ln -fns ~/dotfiles/config/ghostty ~/.config/
 ln -fns ~/dotfiles/config/mise ~/.config/;
 ln -fns ~/dotfiles/config/nvim ~/.config/;
 ln -fns ~/dotfiles/config/wezterm ~/.config/;
