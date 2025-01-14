@@ -1,6 +1,11 @@
 [aws]
 disabled = true
 
+[package]
+disabled = true
+
+# No Runtime Versions Preset
+# https://starship.rs/presets/no-runtimes
 [bun]
 format = "via [$symbol]($style)"
 
