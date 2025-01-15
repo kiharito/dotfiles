@@ -15,6 +15,9 @@ ln -fns ~/dotfiles/config/gh/config.yml ~/.config/gh/config.yml;
 ln -fns ~/dotfiles/config/git/ignore ~/.config/git/ignore;
 ln -fns ~/dotfiles/config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json;
 ln -fns ~/dotfiles/config/lazygit/config.yml ~/.config/lazygit/config.yml;
+ln -fns ~/dotfiles/config/zed/keymap.json ~/.config/zed/keymap.json;
+ln -fns ~/dotfiles/config/zed/settings.json ~/.config/zed/settings.json;
+ln -fns ~/dotfiles/config/zed/themes/tokyo-night.json ~/.config/zed/themes/tokyo-night.json;
 ln -fns ~/dotfiles/config/ghostty ~/.config/
 ln -fns ~/dotfiles/config/mise ~/.config/;
 ln -fns ~/dotfiles/config/nvim ~/.config/;

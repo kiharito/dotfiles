@@ -1,0 +1,14 @@
+[
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePrevItem",
+      "space space": "file_finder::Toggle",
+      "space e": "workspace::ToggleLeftDock",
+      "space c r": "editor::Rename",
+      "space b d": "pane::CloseActiveItem",
+      "space b o": "pane::CloseInactiveItems"
+    }
+  }
+]
