@@ -7,8 +7,18 @@
       "space space": "file_finder::Toggle",
       "space e": "workspace::ToggleLeftDock",
       "space c r": "editor::Rename",
+      "space c s": "outline::Toggle",
       "space b d": "pane::CloseActiveItem",
-      "space b o": "pane::CloseInactiveItems"
+      "space b o": "pane::CloseInactiveItems",
+      "g r": "editor::FindAllReferences"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "space b d": "pane::CloseActiveItem",
+      "space b o": "pane::CloseInactiveItems",
+      "ctrl-w ctrl-w": "terminal_panel::ToggleFocus"
     }
   }
 ]
