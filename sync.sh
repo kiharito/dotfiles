@@ -21,6 +21,5 @@ ln -fns ~/dotfiles/config/zed/themes/tokyo-night.json ~/.config/zed/themes/tokyo
 ln -fns ~/dotfiles/config/ghostty ~/.config/
 ln -fns ~/dotfiles/config/mise ~/.config/;
 ln -fns ~/dotfiles/config/nvim ~/.config/;
-ln -fns ~/dotfiles/config/wezterm ~/.config/;
 
 source ~/.zshrc;
