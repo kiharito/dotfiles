@@ -1,5 +1,6 @@
-[include]
-  path = ~/.gitconfig_user
+[user]
+  name = kiharito
+  email = kiharito@users.noreply.github.com
 
 [core]
   editor = nvim
