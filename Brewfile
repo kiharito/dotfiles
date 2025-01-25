@@ -1,7 +1,6 @@
 tap "dotenvx/brew"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "kiharito/tap"
 tap "remotemobprogramming/brew"
 brew "act"
