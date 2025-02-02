@@ -5,6 +5,9 @@ SHELL := /bin/zsh
 setup-mac:
 	./scripts/setup-mac.sh
 
+setup-rust:
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 brew:
 	brew bundle --no-lock --verbose --file=./Brewfile
 	brew doctor
