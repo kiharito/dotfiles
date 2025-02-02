@@ -20,5 +20,11 @@
       "space b o": "pane::CloseInactiveItems",
       "ctrl-w ctrl-w": "terminal_panel::ToggleFocus"
     }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile"
+    }
   }
 ]
