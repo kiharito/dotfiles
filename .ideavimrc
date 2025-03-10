@@ -33,6 +33,7 @@ set which-key
 
 " LazyVimと使い勝手を揃えたい
 let mapleader = ' '
+nnoremap Y y$
 " General
 nmap <leader>cf <Action>(ReformatCode)
 nmap <S-h> <Action>(PreviousTab)
