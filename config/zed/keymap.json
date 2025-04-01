@@ -11,6 +11,7 @@
       "space b d": "pane::CloseActiveItem",
       "space b o": "pane::CloseInactiveItems",
       "g r": "editor::FindAllReferences",
+      "shift-y": ["workspace::SendKeystrokes", "y $"],
       "j": ["vim::Down", { "display_lines": true }],
       "k": ["vim::Up", { "display_lines": true }]
     }
