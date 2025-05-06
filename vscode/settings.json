@@ -1,6 +1,7 @@
 {
     "editor.fontFamily": "UDEV Gothic 35NF",
     "editor.fontSize": 14,
+    "editor.formatOnSave": true,
     "editor.tabSize": 2,
     "files.exclude": {
         "**/__pycache__": true,
@@ -10,6 +11,12 @@
         "**/.venv": true,
         "**/.ruff_cache": true,
         "**/database.db": true
+    },
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
     },
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "strict",

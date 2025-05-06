@@ -33,4 +33,6 @@ ln -fns ~/dotfiles/config/zed/settings.json ~/.config/zed/settings.json
 mkdir -p ~/.config/zed/themes
 ln -fns ~/dotfiles/config/zed/themes/tokyo-night.json ~/.config/zed/themes/tokyo-night.json
 
+# Cursorの設定はVSCodeと揃える
 ln -fns ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -fns ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Cursor/User/settings.json
