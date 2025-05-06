@@ -24,5 +24,6 @@
         "asvetliakov.vscode-neovim": 1
     },
     "terminal.integrated.fontFamily": "UDEV Gothic NF",
-    "terminal.integrated.fontSize": 14
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.letterSpacing": 2.0
 }
