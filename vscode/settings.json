@@ -1,0 +1,19 @@
+{
+    "editor.fontFamily": "UDEV Gothic 35NF",
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.idea": true,
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/.venv": true,
+        "**/.ruff_cache": true,
+        "**/database.db": true
+    },
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "strict",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
+}

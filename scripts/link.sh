@@ -32,3 +32,5 @@ ln -fns ~/dotfiles/config/zed/keymap.json ~/.config/zed/keymap.json
 ln -fns ~/dotfiles/config/zed/settings.json ~/.config/zed/settings.json
 mkdir -p ~/.config/zed/themes
 ln -fns ~/dotfiles/config/zed/themes/tokyo-night.json ~/.config/zed/themes/tokyo-night.json
+
+ln -fns ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
