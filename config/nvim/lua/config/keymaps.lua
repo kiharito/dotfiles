@@ -8,4 +8,10 @@ if vim.g.vscode then
   map("n", "<leader>e", function()
     vim.fn.VSCodeNotify("workbench.view.explorer")
   end, opts)
+  map("n", "<leader>bd", function()
+    vim.fn.VSCodeNotify("workbench.action.closeActiveEditor")
+  end, opts)
+  map("n", "<leader>bo", function()
+    vim.fn.VSCodeNotify("workbench.action.closeOtherEditors")
+  end, opts)
 end
