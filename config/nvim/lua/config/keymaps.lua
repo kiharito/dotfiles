@@ -14,4 +14,7 @@ if vim.g.vscode then
   map("n", "<leader>bo", function()
     vim.fn.VSCodeNotify("workbench.action.closeOtherEditors")
   end, opts)
+  map("n", "<leader>gg", function()
+    vim.fn.VSCodeNotify("lazygit-vscode.toggle")
+  end, opts)
 end
