@@ -1,6 +1,7 @@
 eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
+eval "$(direnv hook zsh)"
 
 # alias
 source ~/.aliases
