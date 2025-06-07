@@ -20,4 +20,7 @@ if vim.g.vscode then
   map("n", "<leader>gg", function()
     vim.fn.VSCodeNotify("lazygit-vscode.toggle")
   end, opts)
+  map("n", "<leader>cr", function()
+    vim.fn.VSCodeNotify("editor.action.rename")
+  end, opts)
 end
