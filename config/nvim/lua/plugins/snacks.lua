@@ -15,6 +15,7 @@ return {
     { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
+    { "<leader>sw", function() Snacks.picker.grep_word() end, desc = "Grep Word", mode = { "n", "x" } },
     -- Bufdelete
     { "<leader>bd", function() Snacks.bufdelete() end, desc = "Delete Buffer" },
     { "<leader>bo", function() Snacks.bufdelete.other() end, desc = "Delete Other Buffers" },
