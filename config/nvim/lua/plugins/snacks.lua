@@ -20,5 +20,9 @@ return {
     { "<leader>bo", function() Snacks.bufdelete.other() end, desc = "Delete Other Buffers" },
     -- Lazygit
     { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit" },
+    -- LSP
+    { "<leader>cl", function() Snacks.picker.lsp_config() end, desc = "LSP Info" },
+    { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
+    { "gr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "References" },
   },
 }
