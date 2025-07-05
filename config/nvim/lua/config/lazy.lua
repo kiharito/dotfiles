@@ -23,9 +23,11 @@ vim.g.maplocalleader = "\\"
 vim.opt.clipboard = "unnamedplus" -- Sync with system clipboard
 vim.opt.cursorline = true -- Enable highlighting of the current line
 vim.opt.grepprg = "rg --vimgrep"
+vim.opt.laststatus = 3 -- global statusline
 vim.opt.number = true -- Print line number
 vim.opt.relativenumber = true -- Relative line numbers
 vim.opt.scrolloff = 4 -- Lines of context
+vim.opt.showmode = false -- Dont show mode since we have a statusline
 vim.opt.termguicolors = true -- True color support
 
 -- Setup lazy.nvim
