@@ -45,3 +45,6 @@ require("lazy").setup({
 
 -- Setup LSP
 require("lsp")
+
+-- LSP keymaps
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
