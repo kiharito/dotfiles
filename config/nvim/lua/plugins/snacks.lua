@@ -25,5 +25,6 @@ return {
     { "<leader>cl", function() Snacks.picker.lsp_config() end, desc = "LSP Info" },
     { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
     { "gr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "References" },
+    { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
   },
 }
