@@ -7,7 +7,16 @@ return {
     bufdelete = { enabled = true },
     explorer = { enabled = true },
     lazygit = { enabled = true },
-    picker = { enabled = true },
+    picker = {
+      enabled = true,
+      win = {
+        input = {
+          keys = {
+	    ["<c-i>"] = { "inspect", mode = { "n", "i" } },
+	  },
+	},
+      },
+    },
   },
   keys = {
     -- Top Pickers & Explorer
