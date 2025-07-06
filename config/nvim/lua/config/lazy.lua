@@ -48,4 +48,13 @@ require("lsp")
 
 -- Keymaps
 vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "Rename" })
-vim.keymap.set("n", "K", function() return vim.lsp.buf.hover() end, { desc = "Hover" })
+vim.keymap.set("n", "K", function()
+  return vim.lsp.buf.hover()
+end, { desc = "Hover" })
+
+-- Custom
+vim.api.nvim_create_autocmd("TextYankPost", {
+  callback = function()
+    vim.highlight.on_yank({ timeout = 200 })
+  end,
+})
