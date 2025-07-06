@@ -9,10 +9,20 @@ return {
     lazygit = { enabled = true },
     picker = {
       enabled = true,
+      actions = {
+        yank_inspect = {
+          action = function(_, item)
+            if not item then return end
+            local inspect_str = vim.inspect(item)
+            vim.fn.setreg("+", inspect_str)
+          end,
+        },
+      },
       win = {
         input = {
           keys = {
 	    ["<c-i>"] = { "inspect", mode = { "n", "i" } },
+	    ["<c-y>"] = { "yank_inspect", mode = { "n", "i" } },
 	  },
 	},
       },
