@@ -46,6 +46,6 @@ require("lazy").setup({
 -- Setup LSP
 require("lsp")
 
--- LSP keymaps
+-- Keymaps
 vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "Rename" })
 vim.keymap.set("n", "K", function() return vim.lsp.buf.hover() end, { desc = "Hover" })
