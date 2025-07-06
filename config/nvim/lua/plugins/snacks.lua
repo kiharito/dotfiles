@@ -19,6 +19,9 @@ return {
     -- Bufdelete
     { "<leader>bd", function() Snacks.bufdelete() end, desc = "Delete Buffer" },
     { "<leader>bo", function() Snacks.bufdelete.other() end, desc = "Delete Other Buffers" },
+    -- Diagnostics
+    { "<leader>sd", function() Snacks.picker.diagnostics_buffer() end, desc = "Buffer Diagnostics" },
+    { "<leader>sD", function() Snacks.picker.diagnostics() end, desc = "Diagnostics" },
     -- Lazygit
     { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit" },
     -- LSP
