@@ -47,6 +47,8 @@ require("lazy").setup({
 require("lsp")
 
 -- Keymaps
+vim.keymap.set("n", "<S-h>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
+vim.keymap.set("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "Rename" })
 vim.keymap.set("n", "K", function()
   return vim.lsp.buf.hover()
