@@ -20,15 +20,18 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-vim.opt.clipboard = "unnamedplus" -- Sync with system clipboard
-vim.opt.cursorline = true -- Enable highlighting of the current line
-vim.opt.grepprg = "rg --vimgrep"
-vim.opt.laststatus = 3 -- global statusline
-vim.opt.number = true -- Print line number
-vim.opt.relativenumber = true -- Relative line numbers
-vim.opt.scrolloff = 4 -- Lines of context
-vim.opt.showmode = false -- Dont show mode since we have a statusline
-vim.opt.termguicolors = true -- True color support
+
+local opt = vim.opt
+opt.clipboard = "unnamedplus" -- Sync with system clipboard
+opt.cursorline = true -- Enable highlighting of the current line
+opt.grepprg = "rg --vimgrep"
+opt.laststatus = 3 -- global statusline
+opt.number = true -- Print line number
+opt.relativenumber = true -- Relative line numbers
+opt.scrolloff = 4 -- Lines of context
+opt.showmode = false -- Dont show mode since we have a statusline
+opt.termguicolors = true -- True color support
+opt.spelllang = { "en", "cjk" } -- Enable spell checking for English and also Japanese
 
 -- Setup lazy.nvim
 require("lazy").setup({
