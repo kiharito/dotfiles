@@ -7,6 +7,10 @@ ln -fns ~/dotfiles/.zprofile ~/.zprofile
 ln -fns ~/dotfiles/.zshenv ~/.zshenv
 ln -fns ~/dotfiles/.zshrc ~/.zshrc
 
+mkdir -p ~/.claude
+ln -fns ~/dotfiles/claude/CLAUDE.md ~/.claude/CLAUDE.md
+ln -fns ~/dotfiles/claude/settings.json ~/.claude/settings.json
+
 mkdir -p ~/.config
 ln -fns ~/dotfiles/config/starship.toml ~/.config/starship.toml
 
