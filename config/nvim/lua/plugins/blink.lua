@@ -20,7 +20,8 @@ return {
     --
     -- See :h blink-cmp-config-keymap for defining your own keymap
     keymap = {
-      preset = "default",
+      preset = "enter",
+      ["<C-y>"] = { "select_and_accept" },
       ["<C-k>"] = { "select_prev", "fallback_to_mappings" },
       ["<C-j>"] = { "select_next", "fallback_to_mappings" },
     },
