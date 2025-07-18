@@ -25,6 +25,8 @@
     "terminal.integrated.letterSpacing": 2.0,
     "github.copilot.nextEditSuggestions.enabled": true,
     "vim.leader": "<space>",
+    "vim.highlightedyank.enable": true,
+    "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
@@ -83,6 +85,15 @@
             "commands": [
                 "editor.action.rename"
             ]
+        },
+        {
+            "before": [
+                "<S-y>"
+            ],
+            "after": [
+                "y",
+                "$"
+            ],
         }
     ],
     // To improve performance
