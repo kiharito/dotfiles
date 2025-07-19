@@ -3,6 +3,7 @@ ln -fns ~/dotfiles/.actrc ~/.actrc
 ln -fns ~/dotfiles/.aliases ~/.aliases
 ln -fns ~/dotfiles/.gitconfig ~/.gitconfig
 ln -fns ~/dotfiles/.ideavimrc ~/.ideavimrc
+ln -fns ~/dotfiles/.ripgreprc ~/.ripgreprc
 ln -fns ~/dotfiles/.zprofile ~/.zprofile
 ln -fns ~/dotfiles/.zshenv ~/.zshenv
 ln -fns ~/dotfiles/.zshrc ~/.zshrc

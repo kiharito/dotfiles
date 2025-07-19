@@ -49,7 +49,7 @@ return {
     {
       "<leader>/",
       function()
-        Snacks.picker.grep()
+        Snacks.picker.grep({ hidden = true })
       end,
       desc = "Grep",
     },
@@ -63,7 +63,7 @@ return {
     {
       "<leader>sw",
       function()
-        Snacks.picker.grep_word()
+        Snacks.picker.grep_word({ hidden = true })
       end,
       desc = "Grep Word",
       mode = { "n", "x" },
