@@ -1,0 +1,27 @@
+[
+  {
+    "key": "enter",
+    "command": "explorer.openAndPassFocus",
+    "when": "explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "space e",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "explorerViewletVisible && !inputFocus && vim.mode == 'Normal'"
+  }
+]

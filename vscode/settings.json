@@ -59,6 +59,22 @@
         },
         {
             "before": [
+                "<S-h>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
                 "<leader>",
                 "<space>"
             ],
@@ -69,11 +85,37 @@
         {
             "before": [
                 "<leader>",
-                "g",
-                "g"
+                "/"
             ],
             "commands": [
-                "lazygit-vscode.toggle"
+                "workbench.action.findInFiles"
+            ]
+        },
+        {
+            "before": [
+                "<S-k>"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.gotoSymbol"
             ]
         },
         {
@@ -94,6 +136,16 @@
                 "y",
                 "$"
             ],
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "g"
+            ],
+            "commands": [
+                "lazygit-vscode.toggle"
+            ]
         }
     ],
     // To improve performance
